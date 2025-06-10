@@ -1,0 +1,46 @@
+# Base URL for the OData service
+@baseUrl = http://localhost:4004/odata/v4/employee/
+
+# READ: Get all employees
+GET {{baseUrl}}/Employees
+Content-Type: application/json
+
+###
+
+# READ: Get a single employee by ID
+GET {{baseUrl}}/Employees(6ba7b810-9dad-11d1-80b4-00c04fd430c1)
+Content-Type: application/json
+
+###
+
+# CREATE: Add a new employee
+POST {{baseUrl}}/Employees
+Content-Type: application/json
+
+{
+  "ID": "6ba7b813-9dad-11d1-80b4-00c04fd430c4",
+  "firstName": "Alice",
+  "lastName": "Brown",
+  "email": "alice.brown@example.com",
+  "hireDate": "2025-06-06",
+  "department_ID": "550e8400-e29b-41d4-a716-446655440001",
+  "createdAt": "2025-06-06T02:05:00Z",
+  "createdBy": "admin"
+}
+
+###
+
+# UPDATE: Modify an existing employee
+PATCH {{baseUrl}}/Employees(6ba7b813-9dad-11d1-80b4-00c04fd430c4)
+Content-Type: application/json
+
+{
+  "firstName": "Alicia",
+  "email": "alicia.brown@example.com"
+}
+
+###
+
+# DELETE: Remove an employee
+DELETE {{baseUrl}}/Employees(6ba7b813-9dad-11d1-80b4-00c04fd430c4)
+Content-Type: application/json

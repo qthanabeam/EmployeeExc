@@ -1,0 +1,4 @@
+ID,firstName,lastName,email,hireDate,department_ID,createdAt,createdBy
+"6ba7b810-9dad-11d1-80b4-00c04fd430c1","John","Doe","john.doe@example.com","2023-01-15","550e8400-e29b-41d4-a716-446655440001","2025-06-06T08:51:00Z","admin"
+"6ba7b811-9dad-11d1-80b4-00c04fd430c2","Jane","Smith","jane.smith@example.com","2024-03-22","550e8400-e29b-41d4-a716-446655440002","2025-06-06T08:51:00Z","admin"
+"6ba7b812-9dad-11d1-80b4-00c04fd430c3","Bob","Johnson","bob.johnson@example.com","2022-09-10","550e8400-e29b-41d4-a716-446655440003","2025-06-06T08:51:00Z","admin"
